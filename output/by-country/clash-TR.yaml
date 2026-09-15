@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 104.17.147.22
-  port: 443
+  server: 188.132.174.236
+  port: 1080
   udp: true
-  type: vless
-  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
-  tls: true
-  servername: relay.lunetcloud.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /lunetnetwork
-    headers:
-      Host: relay.lunetcloud.ir
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 156.67.63.231
   port: 443
@@ -31,7 +23,7 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 107.161.174.26
   port: 443
@@ -45,6 +37,16 @@ proxies:
   servername: books.blackbigdog.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -56,18 +58,6 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: trexnet1.trexnet.cfd
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12726f0b-ff88-4082-85c2-a18e5356f41c
-  tls: true
-  reality-opts:
-    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
-    short-id: d7397feef49deef9
-  servername: www.upwork.com
-  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
   server: 13.143.137.164
   port: 9443
